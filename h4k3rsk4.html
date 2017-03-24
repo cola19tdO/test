@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<html lang="pl-PL">
+<title>HTML Tutorial</title>
+
+
+</head>
+
+<body>
+<h1>Wyznacznik dlugisci imienia</h1>
+<p id="text"></p>
+<script>
+ 
+ var inputText = "Atekst wejściowy :P- zhakerowana mowa:P";
+ var outputText = "";
+
+ console.log("outputText przed petla: " + outputText);
+ 
+ for(var i = 0; i < inputText.length; i++){
+
+  if(inputText[i]==="a" || inputText[i]==="A"){
+  	outputText+="4";
+  } else if(inputText[i]==="e" || inputText[i]==="E"){
+  	outputText+="3";
+  } else if(inputText[i]==="o" || inputText[i]==="O"){
+  	outputText+="0";
+  } else if(inputText[i]==="i" || inputText[i]==="I"){
+  	outputText+="1";
+  } else{
+  	outputText = outputText + inputText[i];
+  }
+
+
+  
+  //
+  
+ } 
+ outputText = outputText.replace(':P', '<img src="http://images4.okazje.info.pl/p/dla-dziecka/2684/th220/darymex-poduszka-dekoracyjna-przytulanka-40x40-emotikon-buzka-z-jezyczkiem-b-107.jpg">');
+
+  document.getElementById("text").innerHTML = outputText;
+ console.log("outputText po petli: " + outputText);
+</script>
+
+</body>
+</html> 

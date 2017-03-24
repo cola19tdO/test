@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HTML Tutorial</title>
+
+
+</head>
+
+<body>
+<h1>Wyznacznik dlugisci imienia</h1>
+
+<script>
+  
+  var klub1 = {"klub": "FC Porto", "pkt": null, "mP":4, "mW":5, "mR":4};
+  var klub2 = {"klub": "Benfica Lisboa", "pkt": null, "mP":2, "mW":2, "mR":8};
+  var klub3 = {"klub": "Sporting Lisboa", "pkt": null, "mP":6, "mW":2, "mR":6};
+
+  var kluby = [klub1, klub2, klub3];
+
+  console.log(kluby);
+
+  for(var i = 0; i < kluby.length; i++){
+    console.log(kluby[i]);
+    kluby[i].pkt = 3 * kluby[i].mW + 1 * kluby[i].mR;
+    console.log("Klub: " + kluby[i]["klub"] + ", posiada " +  kluby[i].pkt + " punktów.");
+  }
+
+</script>
+</body>
+</html> 
